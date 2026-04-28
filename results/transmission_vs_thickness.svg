@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="450.0" y="28" text-anchor="middle" font-size="22" font-family="Arial">Transmission vs slab thickness</text>
+<line x1="78" y1="490" x2="876" y2="490" stroke="#252525"/>
+<line x1="78" y1="54" x2="78" y2="490" stroke="#252525"/>
+<line x1="78.0" y1="490" x2="78.0" y2="495" stroke="#252525"/>
+<text x="78.0" y="514" text-anchor="middle" font-size="12" font-family="Arial">1</text>
+<line x1="73" y1="490.0" x2="78" y2="490.0" stroke="#252525"/>
+<text x="68" y="494.0" text-anchor="end" font-size="12" font-family="Arial">0.00</text>
+<line x1="237.6" y1="490" x2="237.6" y2="495" stroke="#252525"/>
+<text x="237.6" y="514" text-anchor="middle" font-size="12" font-family="Arial">7</text>
+<line x1="73" y1="402.8" x2="78" y2="402.8" stroke="#252525"/>
+<text x="68" y="406.8" text-anchor="end" font-size="12" font-family="Arial">0.20</text>
+<line x1="397.2" y1="490" x2="397.2" y2="495" stroke="#252525"/>
+<text x="397.2" y="514" text-anchor="middle" font-size="12" font-family="Arial">12</text>
+<line x1="73" y1="315.6" x2="78" y2="315.6" stroke="#252525"/>
+<text x="68" y="319.6" text-anchor="end" font-size="12" font-family="Arial">0.40</text>
+<line x1="556.8" y1="490" x2="556.8" y2="495" stroke="#252525"/>
+<text x="556.8" y="514" text-anchor="middle" font-size="12" font-family="Arial">18</text>
+<line x1="73" y1="228.4" x2="78" y2="228.4" stroke="#252525"/>
+<text x="68" y="232.4" text-anchor="end" font-size="12" font-family="Arial">0.60</text>
+<line x1="716.4" y1="490" x2="716.4" y2="495" stroke="#252525"/>
+<text x="716.4" y="514" text-anchor="middle" font-size="12" font-family="Arial">23</text>
+<line x1="73" y1="141.2" x2="78" y2="141.2" stroke="#252525"/>
+<text x="68" y="145.2" text-anchor="end" font-size="12" font-family="Arial">0.80</text>
+<line x1="876.0" y1="490" x2="876.0" y2="495" stroke="#252525"/>
+<text x="876.0" y="514" text-anchor="middle" font-size="12" font-family="Arial">29</text>
+<line x1="73" y1="54.0" x2="78" y2="54.0" stroke="#252525"/>
+<text x="68" y="58.0" text-anchor="end" font-size="12" font-family="Arial">1.00</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.6" points="78.0,350.2 135.0,449.9 192.0,473.7 249.0,484.5 306.0,487.7 363.0,488.8 420.0,489.3 477.0,489.9 534.0,489.9 591.0,490.0 648.0,490.0 705.0,490.0 762.0,490.0 819.0,490.0 876.0,490.0"/>
+<circle cx="78.0" cy="350.2" r="3.2" fill="#2563eb"/>
+<circle cx="135.0" cy="449.9" r="3.2" fill="#2563eb"/>
+<circle cx="192.0" cy="473.7" r="3.2" fill="#2563eb"/>
+<circle cx="249.0" cy="484.5" r="3.2" fill="#2563eb"/>
+<circle cx="306.0" cy="487.7" r="3.2" fill="#2563eb"/>
+<circle cx="363.0" cy="488.8" r="3.2" fill="#2563eb"/>
+<circle cx="420.0" cy="489.3" r="3.2" fill="#2563eb"/>
+<circle cx="477.0" cy="489.9" r="3.2" fill="#2563eb"/>
+<circle cx="534.0" cy="489.9" r="3.2" fill="#2563eb"/>
+<circle cx="591.0" cy="490.0" r="3.2" fill="#2563eb"/>
+<circle cx="648.0" cy="490.0" r="3.2" fill="#2563eb"/>
+<circle cx="705.0" cy="490.0" r="3.2" fill="#2563eb"/>
+<circle cx="762.0" cy="490.0" r="3.2" fill="#2563eb"/>
+<circle cx="819.0" cy="490.0" r="3.2" fill="#2563eb"/>
+<circle cx="876.0" cy="490.0" r="3.2" fill="#2563eb"/>
+<polyline fill="none" stroke="#b45309" stroke-width="2.6" points="78.0,122.6 135.0,221.9 192.0,283.3 249.0,325.9 306.0,348.3 363.0,376.6 420.0,399.2 477.0,412.7 534.0,419.9 591.0,432.2 648.0,441.9 705.0,446.0 762.0,453.8 819.0,460.2 876.0,462.1"/>
+<circle cx="78.0" cy="122.6" r="3.2" fill="#b45309"/>
+<circle cx="135.0" cy="221.9" r="3.2" fill="#b45309"/>
+<circle cx="192.0" cy="283.3" r="3.2" fill="#b45309"/>
+<circle cx="249.0" cy="325.9" r="3.2" fill="#b45309"/>
+<circle cx="306.0" cy="348.3" r="3.2" fill="#b45309"/>
+<circle cx="363.0" cy="376.6" r="3.2" fill="#b45309"/>
+<circle cx="420.0" cy="399.2" r="3.2" fill="#b45309"/>
+<circle cx="477.0" cy="412.7" r="3.2" fill="#b45309"/>
+<circle cx="534.0" cy="419.9" r="3.2" fill="#b45309"/>
+<circle cx="591.0" cy="432.2" r="3.2" fill="#b45309"/>
+<circle cx="648.0" cy="441.9" r="3.2" fill="#b45309"/>
+<circle cx="705.0" cy="446.0" r="3.2" fill="#b45309"/>
+<circle cx="762.0" cy="453.8" r="3.2" fill="#b45309"/>
+<circle cx="819.0" cy="460.2" r="3.2" fill="#b45309"/>
+<circle cx="876.0" cy="462.1" r="3.2" fill="#b45309"/>
+<polyline fill="none" stroke="#047857" stroke-width="2.6" points="78.0,131.2 135.0,215.8 192.0,281.3 249.0,314.6 306.0,337.7 363.0,364.4 420.0,380.4 477.0,391.2 534.0,411.1 591.0,411.2 648.0,410.9 705.0,423.1 762.0,427.1 819.0,438.8 876.0,434.0"/>
+<circle cx="78.0" cy="131.2" r="3.2" fill="#047857"/>
+<circle cx="135.0" cy="215.8" r="3.2" fill="#047857"/>
+<circle cx="192.0" cy="281.3" r="3.2" fill="#047857"/>
+<circle cx="249.0" cy="314.6" r="3.2" fill="#047857"/>
+<circle cx="306.0" cy="337.7" r="3.2" fill="#047857"/>
+<circle cx="363.0" cy="364.4" r="3.2" fill="#047857"/>
+<circle cx="420.0" cy="380.4" r="3.2" fill="#047857"/>
+<circle cx="477.0" cy="391.2" r="3.2" fill="#047857"/>
+<circle cx="534.0" cy="411.1" r="3.2" fill="#047857"/>
+<circle cx="591.0" cy="411.2" r="3.2" fill="#047857"/>
+<circle cx="648.0" cy="410.9" r="3.2" fill="#047857"/>
+<circle cx="705.0" cy="423.1" r="3.2" fill="#047857"/>
+<circle cx="762.0" cy="427.1" r="3.2" fill="#047857"/>
+<circle cx="819.0" cy="438.8" r="3.2" fill="#047857"/>
+<circle cx="876.0" cy="434.0" r="3.2" fill="#047857"/>
+<text x="450.0" y="538" text-anchor="middle" font-size="15" font-family="Arial">Thickness L (cm)</text>
+<text x="18" y="280.0" transform="rotate(-90 18 280.0)" text-anchor="middle" font-size="15" font-family="Arial">Transmission fraction</text>
+<line x1="710" y1="54" x2="740" y2="54" stroke="#2563eb" stroke-width="3"/>
+<text x="748" y="59" font-size="14" font-family="Arial">Water</text>
+<line x1="710" y1="78" x2="740" y2="78" stroke="#b45309" stroke-width="3"/>
+<text x="748" y="83" font-size="14" font-family="Arial">Lead</text>
+<line x1="710" y1="102" x2="740" y2="102" stroke="#047857" stroke-width="3"/>
+<text x="748" y="107" font-size="14" font-family="Arial">Graphite</text>
+</svg>

@@ -1,0 +1,4 @@
+n,absorbed_fraction,absorbed_uncertainty,absorbed_count,reflected_fraction,reflected_uncertainty,reflected_count,transmitted_fraction,transmitted_uncertainty,transmitted_count,max_steps_fraction,max_steps_uncertainty,max_steps_count,case
+4000.0,0.202,0.006348149336617721,808.0,0.79625,0.006368593594742877,3185.0,0.00175,0.0006608588162383854,7.0,0.0,0.0,0.0,Water + Lead
+4000.0,0.1385,0.005461633226425956,554.0,0.72,0.007099295739719539,2880.0,0.1415,0.0055108472579087145,566.0,0.0,0.0,0.0,Lead + Graphite
+4000.0,0.19625,0.006279648427658989,785.0,0.80175,0.00630370798617766,3207.0,0.002,0.0007063993204979744,8.0,0.0,0.0,0.0,Water + Graphite
