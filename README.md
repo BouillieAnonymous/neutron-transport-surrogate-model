@@ -4,20 +4,23 @@ This repository contains a Monte Carlo notebook on neutron transport through
 shielding materials, plus an extension notebook that trains surrogate models for
 fast transmission prediction.
 
+This is a cleaned portfolio version of a computational physics project, with an
+independent machine-learning extension for surrogate modelling.
+
 ## Contents
 
 - `notebooks/neutron_transport_monte_carlo_with_outputs.ipynb` - main
   project notebook with saved outputs.
-- `notebooks/neutron_transport_monte_carlo_clean.ipynb` - the same main notebook with
-  outputs removed for lighter version control.
+- `notebooks/neutron_transport_monte_carlo_clean.ipynb` - the same main
+  notebook with outputs removed for lighter version control.
 - `notebooks/surrogate_model_extension.ipynb` - extension notebook for the
   neural-network surrogate model.
 - `notebooks/surrogate_model_extension_clean.ipynb` - output-free version of
   the extension notebook.
 - `src/neutron_transport.py` - reusable Monte Carlo simulation and plotting
   utilities.
-- `scripts/run_neutron_transport.py` - script that regenerates the numerical tables and
-  SVG figures.
+- `scripts/run_neutron_transport.py` - script that regenerates the numerical
+  tables and SVG figures.
 - `results/` - generated CSV summaries, diagnostics, and SVG plots.
 
 ## Project Summary
@@ -35,6 +38,14 @@ surrogate regressors:
 
 Both models are trained to approximate Monte Carlo transmission estimates much
 faster than repeatedly running the full random-walk simulation.
+
+## Scientific ML Motivation
+
+The surrogate-modelling extension follows a common scientific machine learning
+workflow: using a physics-based simulator to generate data, then training faster
+data-driven models to approximate simulation outputs. The aim is not to replace
+the Monte Carlo model, but to explore when a neural-network surrogate can
+accelerate parameter scans while still using physically meaningful inputs.
 
 ## Setup
 
