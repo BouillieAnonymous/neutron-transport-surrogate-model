@@ -1,4 +1,4 @@
-# Project 3: Neutron Transport Monte Carlo
+# Neutron Transport Monte Carlo
 
 This repository contains an anonymised computational physics project on Monte
 Carlo neutron transport through shielding materials.
