@@ -16,6 +16,8 @@ transmission prediction.
   project notebook with saved outputs.
 - `notebooks/neutron_transport_monte_carlo_clean.ipynb` - output-free copy of
   the latest main notebook for lighter version control.
+- `notebooks/neutron_transport_full_project.ipynb` - combined notebook that
+  contains the main project followed by the surrogate modelling extension.
 - `notebooks/surrogate_model_extension.ipynb` - optional neural-network
   surrogate modelling extension.
 - `notebooks/surrogate_model_extension_clean.ipynb` - output-free copy of the
