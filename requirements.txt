@@ -2,5 +2,7 @@ ipython
 jupyter
 matplotlib
 numpy
+pandas
+plotly
 scikit-learn
 torch

@@ -1,51 +1,45 @@
-# Neutron Transport Monte Carlo and Surrogate Model
+# Project 3: Neutron Transport Monte Carlo
 
-This repository contains a Monte Carlo notebook on neutron transport through
-shielding materials, plus an extension notebook that trains surrogate models for
-fast transmission prediction.
+This repository contains an anonymised computational physics project on Monte
+Carlo neutron transport through shielding materials.
+The main notebook is the latest completed project notebook, including saved
+outputs, explanatory text, the Woodcock tracking stretch task, and the final
+runtime check.
 
-This is a cleaned portfolio version of a computational physics project, with an
-independent machine-learning extension for surrogate modelling.
+An optional scientific-machine-learning extension is also included as a separate
+notebook. It uses simulation data to train surrogate models for fast
+transmission prediction.
 
 ## Contents
 
-- `notebooks/neutron_transport_monte_carlo_with_outputs.ipynb` - main
+- `notebooks/neutron_transport_monte_carlo_with_outputs.ipynb` - latest main
   project notebook with saved outputs.
-- `notebooks/neutron_transport_monte_carlo_clean.ipynb` - the same main
-  notebook with outputs removed for lighter version control.
-- `notebooks/surrogate_model_extension.ipynb` - extension notebook for the
-  neural-network surrogate model.
-- `notebooks/surrogate_model_extension_clean.ipynb` - output-free version of
-  the extension notebook.
+- `notebooks/neutron_transport_monte_carlo_clean.ipynb` - output-free copy of
+  the latest main notebook for lighter version control.
+- `notebooks/surrogate_model_extension.ipynb` - optional neural-network
+  surrogate modelling extension.
+- `notebooks/surrogate_model_extension_clean.ipynb` - output-free copy of the
+  extension notebook.
 - `src/neutron_transport.py` - reusable Monte Carlo simulation and plotting
-  utilities.
-- `scripts/run_neutron_transport.py` - script that regenerates the numerical
-  tables and SVG figures.
+  utilities extracted for reproducible local runs.
+- `scripts/run_neutron_transport.py` - companion script that regenerates CSV
+  summaries and SVG figures in `results/`.
 - `results/` - generated CSV summaries, diagnostics, and SVG plots.
 
 ## Project Summary
 
-The main notebook implements random number diagnostics, isotropic scattering,
-exponential free paths, random walks through slabs of water, lead, and graphite,
-and a Woodcock tracking stretch task for adjacent slabs. It reports absorption,
-reflection, and transmission rates as functions of slab thickness.
+The main notebook builds the neutron-transport simulation step by step. It first
+checks the random-number tools: uniform sampling, three-dimensional point clouds,
+exponential free paths, isotropic unit vectors, and isotropic random steps. It
+then converts microscopic cross-sections for water, lead, and graphite into
+macroscopic material properties.
 
-The extension notebook builds synthetic simulation data and compares two
-surrogate regressors:
-
-- `sklearn.neural_network.MLPRegressor`
-- a small PyTorch feedforward network
-
-Both models are trained to approximate Monte Carlo transmission estimates much
-faster than repeatedly running the full random-walk simulation.
-
-## Scientific ML Motivation
-
-The surrogate-modelling extension follows a common scientific machine learning
-workflow: using a physics-based simulator to generate data, then training faster
-data-driven models to approximate simulation outputs. The aim is not to replace
-the Monte Carlo model, but to explore when a neural-network surrogate can
-accelerate parameter scans while still using physically meaningful inputs.
+The transport model simulates thermal neutrons entering a slab at `x = 0`.
+Neutrons undergo free flight, absorption, isotropic scattering, reflection from
+the entrance side, or transmission through the far side. The notebook estimates
+absorption, reflection, and transmission probabilities for 10 cm slabs, scans
+slab thickness, fits effective transmission attenuation lengths, and validates a
+Woodcock tracking method for two adjacent slabs.
 
 ## Setup
 
@@ -63,7 +57,7 @@ On macOS or Linux, activate the environment with:
 source .venv/bin/activate
 ```
 
-## Reproduce Results
+## Reproduce Scripted Results
 
 From the repository root:
 
@@ -81,24 +75,31 @@ This regenerates the files in `results/`, including:
 - representative SVG plots
 
 Because the simulation is Monte Carlo, final digits may change slightly if the
-random seed, neutron counts, or package versions are changed.
+random seed, neutron counts, or package versions are changed. The script is a
+reproducibility companion to the notebook, so its generated values may not match
+the saved notebook outputs digit-for-digit.
 
-## Headline Results
+## Notebook Headline Results
 
-Current generated results include:
+The latest saved notebook outputs include:
 
-- Water no-scattering attenuation length: about `44.6 +/- 0.1 cm`
+- Water absorption-only attenuation length: `45.01 +/- 0.12 cm`, compared with
+  the theoretical value `44.97 cm`.
 - For a `10 cm` slab:
-  - Water: `A = 0.206`, `R = 0.791`, `T = 0.004`
-  - Lead: `A = 0.101`, `R = 0.621`, `T = 0.278`
-  - Graphite: `A = 0.005`, `R = 0.687`, `T = 0.308`
-- Fitted transmission attenuation lengths:
-  - Water: `1.92 +/- 0.05 cm`
-  - Lead: `9.78 +/- 0.09 cm`
-  - Graphite: `12.74 +/- 0.13 cm`
+  - Water: `A = 0.1997`, `R = 0.7972`, `T = 0.0031`
+  - Lead: `A = 0.1015`, `R = 0.6186`, `T = 0.2800`
+  - Graphite: `A = 0.0080`, `R = 0.6863`, `T = 0.3057`
+- Fitted effective transmission attenuation lengths:
+  - Water: `1.89 +/- 0.03 cm`
+  - Lead: `9.06 +/- 0.24 cm`
+  - Graphite: `11.27 +/- 0.45 cm`
+- Woodcock validation against direct 20 cm slab simulations gives z-scores below
+  1 for water, lead, and graphite.
+- Mixed two-slab Woodcock transmission is about `0.143` for lead then graphite
+  and about `0.141` for graphite then lead.
 
-## Notes for GitHub Upload
+## Notes for Upload
 
-The output-free notebooks are recommended for normal commits because they keep
-Git diffs readable. The saved-output notebook is retained so GitHub can render a
-complete view of the analysis.
+The clean notebooks are recommended for normal commits because they keep Git
+diffs readable. The saved-output notebook is retained so repository viewers can
+render a complete view of the analysis.
